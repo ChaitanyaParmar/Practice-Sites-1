@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--It will make website responsive-->
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3327678131.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="LOGO">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS,<br> Javascript and you are good to go.</p>
+            <a class="hero-btn" href="">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <!-- Javascript for toggle menu -->
+        <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-----Course----->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusamus nesciunt culpa dicta explicabo a at voluptatibus nam commodi inventore error dignissimos, tempore non architecto exercitationem impedit, recusandae accusantium ea.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusamus nesciunt culpa dicta explicabo a at voluptatibus nam commodi inventore error dignissimos, tempore non architecto exercitationem impedit, recusandae accusantium ea.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusamus nesciunt culpa dicta explicabo a at voluptatibus nam commodi inventore error dignissimos, tempore non architecto exercitationem impedit, recusandae accusantium ea.</p>
+            </div>
+        </div>
+    </section>
+
+    <!------Campus----->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png" alt="LONDON">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png" alt="LONDON">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png" alt="LONDON">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----Facilities----->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png" alt="LIBRARY">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt rerum consequatur velit pariatur maxime accusantium?</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png" alt="LIBRARY">
+                <h3>Largest Basketball Court</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt rerum consequatur velit pariatur maxime accusantium?</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png" alt="LIBRARY">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt rerum consequatur velit pariatur maxime accusantium?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-----Testimonials----->
+    <section class="testimonials">
+        <h1>What Our Student Says</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="images/user1.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo itaque assumenda quibusdam laudantium sint dignissimos earum quam. Officia esse nobis provident in earum aliquam et impedit consectetur exercitationem ut?</p>
+                    <h3>Christiane Berkley</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="images/user2.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo itaque assumenda quibusdam laudantium sint dignissimos earum quam. Officia esse nobis provident in earum aliquam et impedit consectetur exercitationem ut?</p>
+                    <h3>David Byer</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----Call To Action----->
+    <section class="cta">
+        <h1>Enroll For Our Various Online Courses<br> Anywhere From The World</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-----Footer----->
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis voluptatibus nobis odio, porro dolorum id amet dolorem.<br> Assumenda ullam fugiat sapiente quos similique architecto. </p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p><i class="far fa-copyright"></i> Chaitanya Parmar</p>
+    </section>
+</body>
+</html>

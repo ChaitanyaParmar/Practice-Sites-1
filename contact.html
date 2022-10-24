@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--It will make website responsive-->
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3327678131.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">   
+                <img src="images/logo.png" alt="LOGO">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONTACT US</h1>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-----Contact Us----->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.918036922188!2d72.48438241498066!3d22.990041284969593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9aee6c89a621%3A0x872df2d55fbb0008!2sLJ%20University%20LJ%20Institute%20of%20Engineering%20And%20Technology!5e0!3m2!1sen!2sin!4v1634126115157!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>Nr Sarkhej-Sanand CircleOff. S.G. Road</h5>
+                        <p>Ahmedabad, Gujarat - 382210.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>
+                        <h5>+91 7096660382</h5>
+                        <p>Monday to Saturday, 10AM - 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <span>
+                        <h5>info@ljku.edu.in</h5>
+                        <p>Email Us Your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="formhandler.php" method="post">
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <input type="text" name="Subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="Msg" placeholder="Message" required></textarea>
+                    <input type="submit" name="btnsubmit" value="Proceed" >
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-----Footer----->
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis voluptatibus nobis odio, porro dolorum id amet dolorem.<br> Assumenda ullam fugiat sapiente quos similique architecto. </p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p><i class="far fa-copyright"></i> Chaitanya Parmar</p>
+    </section>
+</body>
+</html>

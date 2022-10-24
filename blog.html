@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--It will make website responsive-->
+    <title>BLOG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3327678131.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="LOGO">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>OUR CERTIFICATE &<br> ONLINE PROGRAMS FOR 2021</h1>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-----Blog Page Content----->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="">
+                <h2>OUR CERTIFICATE & ONLINE PROGRAMS FOR 2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ab earum odio voluptas repellendus quo iusto voluptate fugiat officiis, temporibus eos sit incidunt, consequatur eligendi. Ullam, at est? Pariatur explicabo doloribus magnam recusandae alias distinctio.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nisi ullam eum laborum consequuntur quis possimus ea atque nihil corrupti quo est reprehenderit delectus excepturi eveniet consequatur numquam eaque, iusto eos, deleniti magni. Corporis quod assumenda qui illum consectetur voluptatibus neque repellendus autem nobis ab?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita deleniti, totam consectetur, rerum placeat esse sunt voluptates consequatur amet iure quae inventore, in nulla non praesentium quos! Labore sunt impedit, sequi at aperiam aspernatur fugit unde asperiores hic nam, a tempore sint quidem libero quaerat ullam autem beatae veritatis cum!</p>
+                <div class="comment-box">
+                    <h3>Leave A Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button class="hero-btn red-btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Buisness Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Buisness Analytics</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>18</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----Footer----->
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis voluptatibus nobis odio, porro dolorum id amet dolorem.<br> Assumenda ullam fugiat sapiente quos similique architecto. </p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p><i class="far fa-copyright"></i> Chaitanya Parmar</p>
+    </section>
+</body>
+</html>
